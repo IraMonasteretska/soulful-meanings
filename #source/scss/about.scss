@@ -1,0 +1,155 @@
+.herosection {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    h1 {
+        text-align: center;
+        color: #121212;
+        font-family: 'Miller_Banner_Bold';
+        font-weight: 700;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-family: 'Miller_Banner_Regular_Italic';
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+}
+
+.aboutsect {
+    padding: 100px 0 188px;
+
+    h3 {
+        max-width: 418px;
+        margin-bottom: 28px;
+    }
+
+    .spaceleftbox {
+        padding-left: 110px;
+    }
+
+    p {
+        color: #fff;
+        margin-bottom: 24px;
+
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .description {
+        padding-bottom: 15px;
+        position: relative;
+
+        .star1 {
+            position: absolute;
+            right: 32px;
+            top: 0;
+            animation: move 3s infinite;
+            animation-delay: 0.5s;
+        }
+
+        .star2 {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            animation: move 3s infinite;
+        }
+    }
+}
+
+.aboutsect-radimgwrap {
+    border-radius: 500px 500px 0 0;
+    border: 1px solid rgba(#fff, 0.7);
+    height: 414px;
+    width: 304px;
+    position: relative;
+    display: inline-block;
+
+    .imgwrap {
+        border-radius: 500px 500px 0 0;
+        width: 304px;
+        overflow: hidden;
+        position: relative;
+        margin-left: 24px;
+        margin-top: -22px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .circletext {
+        width: 215px;
+        position: absolute;
+        right: -137px;
+        bottom: -88px;
+        -webkit-animation: rotatean 12s linear infinite;
+        animation: rotatean 12s linear infinite;
+    }
+    
+}
+
+.transformation {
+    min-height: 405px;
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    .btnsgroup {
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+}
+
+.transformation__bg {
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+

@@ -266,3 +266,26 @@ header.header {
 
 }
 
+@media(max-width:767.8px) {
+    .header__colmenu .header__navwrap {
+        max-width: 540px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .header__logo img {
+        max-width: 240px;
+    }
+
+    header.header {
+        height: 70px;
+    }
+
+    .header__colmenu {
+        top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+
+}

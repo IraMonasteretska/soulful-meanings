@@ -44,5 +44,23 @@ $(document).ready(function () {
 
 
     // menu burger
- 
+    if ($('.burger2').length) {
+        (function () {
+            var burger2;
+            burger2 = document.querySelector(".burger2");
+            burger2.addEventListener("click", function () {
+                return burger2.classList.toggle("on");
+            });
+
+        }).call(this);
+    }
+
+    $('.burger').click(function () {
+        $('body').toggleClass('hidden');
+        $('.header__colmenu').toggleClass('show');
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+    })
 })

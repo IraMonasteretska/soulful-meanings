@@ -368,3 +368,134 @@
 
 
 }
+
+@media(max-width:767.8px) {
+    
+    .whatismeaning__rightimg {
+        top: -60px;
+        width: 150px;
+    }
+
+    .whatismeaning .starimg {
+        top: 80px;
+    }
+
+    .welcomesect {
+        padding-bottom: 150px;
+    }
+
+    .whatismeaning h3 {
+        margin-bottom: 15px;
+    }
+
+    .whatismeaning {
+        min-height: initial;
+    }
+
+    .whatismeaning .container {
+        padding: 160px 0 160px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .welcomesect {
+        padding: 40px 0 120px;
+    }
+
+    .welcomesect__info .subtitle {
+        margin-bottom: 15px;
+        max-width: 250px;
+    }
+
+    .welcomesect__info .butterfly-img {
+        top: 0;
+        width: 100px;
+    }
+
+    .welcomesect__info h1 {
+        margin-bottom: 15px;
+    }
+
+    .btnsgroup {
+        flex-wrap: wrap;
+
+        a {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .countup .countup__box .maintext {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    .countup .countup__box p {
+        font-size: 14px;
+    }
+
+    .countup .countup__box:nth-child(2) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .countup .countup__box:nth-child(3) {
+        padding-left: 20px;
+    }
+
+    .welcomesect__img {
+        padding: 15px;
+
+        img {
+            vertical-align: top;
+        }
+    }
+
+    .welcomesect__img .circlepic {
+        right: -20px;
+    }
+
+    .whatismeaning__rightimg {
+        display: none;
+    }
+
+    .whatismeaning .container {
+        padding: 100px 12px 120px;
+    }
+
+    .whatismeaning__leftimg {
+        width: 200px;
+        bottom: -49px;
+        left: 0;
+        margin-left: 0;
+    }
+
+    .whatismeaning .starimg {
+        top: 20px;
+        right: 20%;
+    }
+
+    .infosection .wrapper .butterfly-img {
+        width: 120px;
+        right: 20px;
+    }
+
+    .infosection {
+        a {
+            margin-right: 0;
+        }
+    }
+
+    .infosection {
+        padding: 120px 0 60px;
+    }
+
+
+    .welcomesect__info .subtitle {
+        font-size: 16px;
+    }
+}

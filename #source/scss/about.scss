@@ -114,7 +114,7 @@
         -webkit-animation: rotatean 12s linear infinite;
         animation: rotatean 12s linear infinite;
     }
-    
+
 }
 
 .transformation {
@@ -153,3 +153,267 @@
     top: 0;
 }
 
+.acrcol {
+    text-align: center;
+}
+
+// me
+.aboutsect {
+    h2 {
+        margin-bottom: 23px;
+        max-width: 430px;
+    }
+}
+
+.aboutsect.aboutsect_me {
+    padding: 75px 0;
+
+    .description .star1 {
+        top: -50px;
+        right: initial;
+        left: -100px;
+    }
+
+    .description .star2 {
+        top: 0;
+        right: 15%;
+        left: initial;
+
+    }
+
+    p {
+        max-width: 408px;
+    }
+
+    .imgwrap {
+        img {
+            vertical-align: top;
+        }
+    }
+
+}
+
+.transformation.transformation_me {
+    display: flex;
+    align-items: center;
+
+    .transformation__bg {
+        opacity: 0.1;
+    }
+}
+
+.labeltext {
+    width: 207px;
+    height: 101px;
+    background: url('../img/about/elipse.png') no-repeat center / 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .herosection {
+        height: auto;
+        padding: 30px 0;
+        min-height: 300px;
+    }
+
+    .aboutsect .spaceleftbox {
+        padding-left: 70px;
+    }
+
+    .aboutsect {
+        padding: 100px 0 140px;
+    }
+
+    // -
+    .aboutsect.aboutsect_me {
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .aboutsect {
+        padding: 70px 0 100px;
+    }
+
+    .acrcol {
+        text-align: left;
+    }
+
+    // -
+    .aboutsect.aboutsect_me .description .star2 {
+        right: 0;
+    }
+
+    .aboutsect h2 {
+        max-width: 100%;
+        padding-right: 50px;
+    }
+
+    .aboutsect.aboutsect_me {
+        padding: 50px 0 30px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .aboutsect {
+        padding: 70px 0 100px;
+    }
+
+    .aboutsect-radimgwrap {
+        width: 270px;
+        height: 370px;
+    }
+
+    .aboutsect-radimgwrap .imgwrap {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: -10px;
+
+        img {
+            vertical-align: top;
+        }
+
+    }
+
+    .aboutsect .description .star2 {
+        bottom: 40%;
+    }
+
+    .aboutsect-radimgwrap .circletext {
+        width: 200px;
+        right: -100px;
+    }
+
+    .transformation {
+        padding: 70px 0;
+        min-height: 300px;
+    }
+
+    // -
+
+    .labeltext {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .herosection {
+        min-height: 220px;
+    }
+
+    .aboutsect-radimgwrap {
+        width: 60%;
+        height: 400px;
+        margin-bottom: 70px;
+    }
+
+    .acrcol {
+        text-align: center;
+    }
+
+    .aboutsect .description {
+        padding-bottom: 0;
+    }
+
+    .aboutsect {
+        padding: 70px 0;
+    }
+
+    .transformation__bg {
+        object-position: 70% 50%;
+    }
+
+    .aboutsect-radimgwrap .imgwrap {
+        height: 100%;
+    }
+
+    // -
+    .aboutsect.aboutsect_me p {
+        max-width: 100%;
+    }
+
+    .labeltext {
+        height: 80px;
+    }
+
+    .transformation.transformation_me {
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .herosection.herosection__you {
+        img {
+            object-position: 60% 50%;
+        }
+    }
+
+    .herosection {
+        min-height: 200px;
+    }
+
+    .aboutsect-radimgwrap {
+        height: 300px;
+    }
+
+    .aboutsect-radimgwrap .circletext {
+        width: 140px;
+        right: -40px;
+        bottom: -60px;
+    }
+
+    .aboutsect {
+        padding: 60px 0 50px;
+    }
+
+    .aboutsect .description .star1 {
+        width: 40px;
+        right: 0;
+    }
+
+    .aboutsect .description .star2 {
+        display: none;
+    }
+
+    .aboutsect .spaceleftbox {
+        padding-left: 0;
+    }
+
+    .transformation {
+        padding: 60px 0;
+    }
+
+
+    .transformation h2 {
+        margin-bottom: 20px;
+    }
+
+    .aboutsect-radimgwrap {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .aboutsect-radimgwrap {
+        height: 380px;
+    }
+
+    .aboutsect.aboutsect_me .description .star1 {
+        top: -20px;
+        right: 0;
+        left: initial;
+    }
+
+}

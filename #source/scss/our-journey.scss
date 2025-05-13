@@ -1,0 +1,44 @@
+.process {
+    padding: 100px 0 120px;
+}
+
+.process__header {
+    margin-bottom: 60px;
+
+    .labeltext {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #fff;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.countbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+
+    img {
+        width: 100%;
+    }
+
+    span {
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Miller_Banner_Bold';
+        color: #fff;
+        display: inline-block;
+        position: absolute;
+    }
+}

@@ -134,6 +134,8 @@
 .process__footer {
     text-align: center;
     margin-top: 44px;
+    position: relative;
+    z-index: 2;
 
     .white-btn {
         img {
@@ -217,4 +219,46 @@
 
 
 
+}
+
+@media(max-width:575.8px) {
+    .process {
+        padding-top: 50px;
+    }
+
+    .process__header {
+        text-align: center;
+    }
+
+    .process__img {
+        min-height: initial;
+        margin-bottom: 20px;
+
+        img {
+            position: relative;
+            left: initial;
+            right: initial;
+            top: initial;
+            bottom: initial;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    .process__descr {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 5px;
+        }
+    }
+
+    .process__row .col-md-5.col-sm-4 {
+        display: none;
+    }
+
+    .process__bottompic {
+        left: 0;
+        width: 150px;
+    }
 }

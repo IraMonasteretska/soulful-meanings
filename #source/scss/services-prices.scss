@@ -319,3 +319,70 @@
 
 }
 
+@media(max-width:767.8px) {
+    .services-overview .star2 {
+        right: 10%;
+    }
+
+    .services-overview .star1 {
+        left: 10%;
+    }
+
+    .so-item h4 {
+        font-size: 18px;
+    }
+
+    .so-item img {
+        height: 80px;
+    }
+
+    .services-overview {
+        padding: 70px 0 50px;
+        position: relative;
+    }
+
+    .pricing-section {
+        padding: 70px 0;
+    }
+
+    .pricingbox {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto 40px;
+    }
+
+    .pricing-section__bottomsect {
+        margin-top: 0;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .services-overview {
+        padding: 50px 0 30px;
+    }
+
+    .services-overview .star1 {
+        left: 10px;
+        top: 100px;
+    }
+
+    .services-overview .star2 {
+        right: 10px;
+        top: 150px;
+    }
+
+    .services-overview__col {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .pricingbox .descrwrap {
+        min-height: 160px;
+    }
+
+    .pricing-section {
+        padding: 50px 0;
+    }
+}

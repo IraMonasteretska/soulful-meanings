@@ -58,9 +58,51 @@ $(document).ready(function () {
     $('.burger').click(function () {
         $('body').toggleClass('hidden');
         $('.header__colmenu').toggleClass('show');
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-            });
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     })
+
+    // modal
+    document.querySelectorAll('[data-target]').forEach(function (trigger) {
+        trigger.addEventListener("click", function () {
+            const targetSelector = trigger.getAttribute("data-target");
+            const targetElement = document.querySelector(targetSelector);
+            if (targetElement) {
+                targetElement.style.display = "flex";
+                setTimeout(() => {
+                    targetElement.classList.add("active");
+                }, 10);
+                document.body.classList.add("hidden");
+            }
+        });
+    });
+
+    document.querySelectorAll('[data-close]').forEach(function (closer) {
+        closer.addEventListener("click", function () {
+            const modal = closer.closest('[id]');
+            if (modal) {
+                modal.classList.remove("active");
+                document.body.classList.remove("hidden");
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+        });
+    });
+
+    // book a session
+    $('.booknow').click(function(){
+        $('.ourservicesrow').addClass('hide');
+        $('.calendywrap').addClass('active');
+    });
+
+     $('.back a').click(function(e){
+        e.preventDefault();
+        $('.ourservicesrow').removeClass('hide');
+        $('.calendywrap').removeClass('active');
+    });
+    
+
 })

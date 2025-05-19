@@ -103,6 +103,5 @@ $(document).ready(function () {
         $('.ourservicesrow').removeClass('hide');
         $('.calendywrap').removeClass('active');
     });
-    
 
 })

@@ -374,3 +374,76 @@
 
 }
 
+@media(max-width:767.8px) {
+    .contactinfo {
+        padding-bottom: 0;
+    }
+
+    .cform-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .modalbox {
+        max-width: 400px;
+    }
+
+    .modalbox h2 {
+        line-height: 120%;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .cont-butterfly {
+        width: 120px;
+        left: -10px;
+        top: -100px;
+    }
+
+    .contactinfo h2 {
+        margin-bottom: 15px;
+    }
+
+    .contlistwrapper .leftcl,
+    .contlistwrapper .rightcl {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .contlist .title {
+        margin-bottom: 5px;
+    }
+
+    .contlist {
+        min-height: initial;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    .cform-wrapper h3 {
+        margin-bottom: 24px;
+    }
+
+    .contformsect .imgwrap img {
+        transform: none;
+        width: 80%;
+    }
+
+    .modalbox {
+        max-width: 100%;
+    }
+
+    .moddail {
+        padding: 15px;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .modalbox .closemodal {
+        right: 10px;
+        top: 10px;
+    }
+
+}

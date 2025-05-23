@@ -103,7 +103,7 @@
     margin-left: -40px;
     margin-right: -40px;
 
-    .col-xl-4 {
+    .col-md-4 {
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -194,6 +194,15 @@
     opacity: 0.1;
 }
 
+.herosection.herosection__servprices .cont-butterfly {
+    width: 138px;
+    height: auto;
+    transform: rotate(-12deg);
+    position: absolute;
+    left: -50px;
+    top: -85px;
+}
+
 
 @media(max-width:1599.8px) {
     .so-item h4 {
@@ -277,7 +286,14 @@
     .pricingrow {
         margin-left: -15px;
         margin-right: -15px;
+
+        .col-md-4 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
+
+
 
 }
 
@@ -384,5 +400,16 @@
 
     .pricing-section {
         padding: 50px 0;
+    }
+
+    .herosection.herosection__servprices {
+        .cont-butterfly {
+            width: 120px;
+            left: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
     }
 }

@@ -155,8 +155,20 @@
 .process__bottompic {
     position: absolute;
     bottom: 0;
-    left: calc(((100vw - 1324px) / 2) + 100px);
-    width: 300px;
+    left: calc(((100vw - 1324px) / 2) + 130px);
+    width: 260px;
+}
+
+.herosection__journey {
+    h1 {
+        padding-right: 150px;
+    }
+}
+
+.herosection {
+    h1.text-right {
+        text-align: right;
+    }
 }
 
 @media(max-width:1199.8px) {
@@ -173,8 +185,8 @@
     }
 
     .process__bottompic {
-        left: calc((100vw - 960px) / 2 + 100px);
-        width: 280px;
+        left: calc((100vw - 960px) / 2 + 70px);
+        width: 240px;
     }
 }
 
@@ -189,6 +201,12 @@
 
     .herosection.herosection__journey img {
         object-position: 30% 50%;
+    }
+
+    .herosection__journey {
+        h1 {
+            padding-right: 20px;
+        }
     }
 }
 
@@ -216,9 +234,22 @@
         text-align: left;
     }
 
+    .process__descr {
+        max-width: 100%;
+        text-align: center;
+    }
 
+    .process__bottompic {
+        display: none;
+    }
 
+    .process {
+        padding-bottom: 70px;
+    }
 
+    .process__header {
+        text-align: center;
+    }
 }
 
 @media(max-width:575.8px) {

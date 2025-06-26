@@ -171,6 +171,66 @@
     }
 }
 
+.journey__infosect {
+    padding: 100px 0 20px;
+}
+
+.journey__infosect-descr {
+    position: relative;
+
+    .star1 {
+        position: absolute;
+        right: 20px;
+        animation: move 3s infinite;
+        animation-delay: 0.5s;
+    }
+
+    .star2 {
+        position: absolute;
+        animation: move 3s infinite;
+        top: 65%;
+    }
+
+    .descr {
+        padding-left: 100px;
+    }
+
+    h3 {
+        max-width: 418px;
+        margin-bottom: 28px;
+    }
+
+    p {
+        color: #fff;
+        margin-bottom: 20px;
+        max-width: 418px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.aboutsect-radimgwrap.journey {
+    .imgwrap {
+        margin-left: 20px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .journey__infosect-descr .descr {
+        padding-left: 50px;
+    }
+
+    .journey__infosect-descr .star1 {
+        right: -20px;
+    }
+
+    .journey__infosect-descr .star2 {
+        left: -20px;
+    }
+}
+
 @media(max-width:1199.8px) {
     .process {
         padding-top: 70px;
@@ -187,6 +247,10 @@
     .process__bottompic {
         left: calc((100vw - 960px) / 2 + 70px);
         width: 240px;
+    }
+
+    .journey__infosect-descr h3 {
+        max-width: 370px;
     }
 }
 
@@ -207,6 +271,19 @@
         h1 {
             padding-right: 20px;
         }
+    }
+
+    .journey__infosect-descr .descr {
+        padding-left: 0;
+    }
+
+    .journey__infosect-descr .star2 {
+        display: none;
+    }
+
+    .journey__infosect-descr .star1 {
+        top: -50px;
+        right: -30px;
     }
 }
 
@@ -250,6 +327,28 @@
     .process__header {
         text-align: center;
     }
+
+    .journey__infosect-descr h3,
+    .journey__infosect-descr p {
+        max-width: 100%;
+    }
+
+    .journey__infosect-descr {
+        margin-bottom: 40px;
+    }
+
+    .journey__infosect-descr .star1 {
+        right: 0;
+        top: -60px;
+    }
+
+    .journey__infosect {
+        padding-top: 70px;
+
+        .aboutsect-radimgwrap {
+            margin-bottom: 0;
+        }
+    }
 }
 
 @media(max-width:575.8px) {
@@ -291,5 +390,13 @@
     .process__bottompic {
         left: 0;
         width: 150px;
+    }
+
+    .journey__infosect-descr .star1 {
+        width: 40px;
+    }
+
+    .journey__infosect-descr h3 {
+        margin-bottom: 20px;
     }
 }

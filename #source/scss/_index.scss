@@ -27,11 +27,12 @@
 
 .welcomesect__info {
     position: relative;
+    padding-top: 130px;
 
     .butterfly-img {
         position: absolute;
         right: 50px;
-        top: 50px;
+        top: 115px;
         transform: rotate(13deg);
         width: 150px;
     }
@@ -72,6 +73,10 @@
             margin-right: 0;
         }
     }
+}
+
+.welcomesect__info .btnsgroup {
+    margin-bottom: 52px;
 }
 
 .countup {
@@ -155,7 +160,7 @@
     .container {
         position: relative;
         z-index: 2;
-        padding: 280px 0 50px;
+        padding: 233px 0 50px;
     }
 
     h3 {
@@ -165,8 +170,11 @@
 
     p {
         color: #121212;
-        margin: 0;
+        margin: 16px;
 
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     .descr {
@@ -180,7 +188,7 @@
             background: url('../img/main/star1.svg') no-repeat center / 100%;
             position: absolute;
             left: -73px;
-            top: 0;
+            top: 40px;
             animation: move 3s infinite;
         }
     }
@@ -189,7 +197,7 @@
         position: absolute;
         width: 85px;
         top: 130px;
-        right: 33%;
+        right: 37%;
         animation: move 3s infinite;
         animation-delay: 0.5s;
     }
@@ -250,6 +258,7 @@
     .welcomesect__info .butterfly-img {
         width: 120px;
         right: 30px;
+        top: 65px;
     }
 
     .welcomesect__info h1 {
@@ -286,11 +295,11 @@
 
     .whatismeaning {
         height: auto;
-        min-height: 500px;
+        min-height: 600px;
     }
 
     .whatismeaning .container {
-        padding: 200px 0 150px;
+        padding-top: 130px;
     }
 
     .whatismeaning h3 {
@@ -304,6 +313,14 @@
 
     .welcomesect__info .subtitle {
         font-size: 18px;
+    }
+
+    .welcomesect__info {
+        padding-top: 70px;
+    }
+
+    .whatismeaning .starimg {
+        right: 31%;
     }
 }
 
@@ -331,12 +348,16 @@
         margin-left: -30px;
     }
 
-    .whatismeaning .container {
-        padding: 160px 0 100px;
+    .whatismeaning {
+        min-height: 550px;
     }
 
     .whatismeaning .starimg {
         width: 60px;
+    }
+
+    .whatismeaning .starimg {
+        right: 24%;
     }
 
 }
@@ -367,10 +388,19 @@
     }
 
 
+    .whatismeaning .starimg {
+        right: 30%;
+        top: 80px;
+    }
+
+    .whatismeaning .container {
+        padding: 130px 0 150px;
+    }
+
 }
 
 @media(max-width:767.8px) {
-    
+
     .whatismeaning__rightimg {
         top: -60px;
         width: 150px;
@@ -464,7 +494,7 @@
     }
 
     .whatismeaning .container {
-        padding: 100px 12px 120px;
+        padding: 70px 12px 120px;
     }
 
     .whatismeaning__leftimg {
@@ -475,7 +505,7 @@
     }
 
     .whatismeaning .starimg {
-        top: 20px;
+        top: 10px;
         right: 20%;
     }
 
@@ -497,5 +527,9 @@
 
     .welcomesect__info .subtitle {
         font-size: 16px;
+    }
+
+    .welcomesect__info .btnsgroup {
+        margin-bottom: 20px;
     }
 }

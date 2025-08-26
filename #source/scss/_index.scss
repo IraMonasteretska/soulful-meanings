@@ -27,13 +27,12 @@
 
 .welcomesect__info {
     position: relative;
-    padding-top: 130px;
 
     .butterfly-img {
         position: absolute;
-        right: 50px;
-        top: 115px;
-        transform: rotate(13deg);
+        left: -80px;
+        top: -100px;
+        transform: rotate(-13deg);
         width: 150px;
     }
 
@@ -57,7 +56,27 @@
 
     h1 {
         position: relative;
-        z-index: 2;
+        
+        span {
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .white-btn {
+        background: #433041;
+        color: #fff;
+        border: #433041;
+
+        &:hover {
+            background: #fff;
+            color: #433041;
+        }
+    }
+
+    .link-arrow span:after {
+        background: #433041;
     }
 }
 
@@ -247,6 +266,7 @@
             width: 150px;
         }
     }
+
 }
 
 @media(max-width:1399.8px) {
@@ -257,8 +277,6 @@
 
     .welcomesect__info .butterfly-img {
         width: 120px;
-        right: 30px;
-        top: 65px;
     }
 
     .welcomesect__info h1 {
@@ -331,11 +349,6 @@
         }
     }
 
-    .welcomesect__info .butterfly-img {
-        top: 20px;
-        right: 10px;
-    }
-
     .whatismeaning__rightimg {
         right: calc((100vw - 960px) / 2);
         width: 180px;
@@ -397,6 +410,10 @@
         padding: 130px 0 150px;
     }
 
+    .welcomesect__info .butterfly-img {
+        left: -40px;
+    }
+
 }
 
 @media(max-width:767.8px) {
@@ -430,7 +447,7 @@
 @media(max-width:575.8px) {
 
     .welcomesect {
-        padding: 40px 0 120px;
+        padding: 70px 0 120px;
     }
 
     .welcomesect__info .subtitle {
@@ -439,8 +456,9 @@
     }
 
     .welcomesect__info .butterfly-img {
-        top: 0;
         width: 100px;
+        top: -80px;
+        left: -20px;
     }
 
     .welcomesect__info h1 {
@@ -532,4 +550,15 @@
     .welcomesect__info .btnsgroup {
         margin-bottom: 20px;
     }
+
+
+    .welcomesect__info {
+        padding-top: 30px;
+    }
+
+    .welcomesect__info .btnsgroup {
+        margin-top: 20px;
+    }
+
+
 }

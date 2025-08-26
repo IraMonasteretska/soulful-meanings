@@ -1,5 +1,5 @@
 footer.footer {
-    background: #fff;
+    background: #3C3039;
     padding: 20px 0 0 0;
 
     nav {
@@ -18,7 +18,7 @@ footer.footer {
 
                 a {
                     text-decoration: none;
-                    color: #121212;
+                    color: #fff;
                     font-size: 14px;
                     position: relative;
 
@@ -30,7 +30,7 @@ footer.footer {
                         position: absolute;
                         left: 0;
                         bottom: -5px;
-                        background: #121212;
+                        background: #fff;
                         transition: 0.3s;
                     }
 
@@ -88,7 +88,7 @@ footer.footer {
 }
 
 .footer__botsect {
-    background: #121212;
+    background: #fff;
     height: 43px;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ footer.footer {
 
     p {
         margin: 0;
-        color: #fff;
+        color: #3C3039;
         font-size: 14px;
     }
 }

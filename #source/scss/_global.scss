@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #121212;
+    background: #806F7F;
 
     &.hidden {
         overflow: hidden;
@@ -65,6 +65,27 @@ img {
         color: #fff;
         background: #121212;
     }
+
+    &.purple {
+        background: #433041;
+        color: #fff;
+        border: #433041;
+
+        &:hover {
+            background: #fff;
+            color: #433041;
+        }
+    }
+
+    &.bordered {
+        background: transparent;
+        color: #fff;
+
+        &:hover {
+            background: #fff;
+            color: #433041;
+        }
+    }
 }
 
 .link-arrow {
@@ -105,6 +126,15 @@ img {
         span {
             &::after {
                 width: 100%;
+            }
+        }
+    }
+
+    &.purple {
+
+        span {
+            &::after {
+                background: #433041;
             }
         }
     }

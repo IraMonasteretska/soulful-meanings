@@ -104,4 +104,15 @@ $(document).ready(function () {
         $('.calendywrap').removeClass('active');
     });
 
+
+
+
+
+
+    // 26.08
+    $('header.header ul li a~span').click(function(){
+        $(this).toggleClass('rotate');
+        $(this).parent().find('ul').slideToggle();
+    });
+
 })

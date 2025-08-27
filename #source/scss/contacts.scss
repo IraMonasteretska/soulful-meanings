@@ -1,11 +1,12 @@
 .contactinfo {
-    padding: 110px 0 50px;
+    padding: 110px 0;
     position: relative;
     overflow: hidden;
 
     .description {
         max-width: 535px;
         position: relative;
+        margin-bottom: 80px;
 
         h2,
         p {
@@ -31,6 +32,7 @@
 .contlistwrapper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 530px;
 
     .leftcl {
         width: 100%;
@@ -55,7 +57,11 @@
 
     .title {
         margin-bottom: 12px;
-        color: #888888;
+        color: #fff;
+        font-family: 'Miller_Banner_Bold';
+        font-weight: bold;
+        font-size: 24px;
+
     }
 
     p {
@@ -114,7 +120,9 @@
 }
 
 .contformsect {
-    padding: 60px 0 126px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 55px 40px;
     position: relative;
 
     .imgwrap {
@@ -135,19 +143,24 @@
 
     h3 {
         margin-bottom: 36px;
+        color: #433041;
     }
 
     .white-btn {
         min-width: 185px;
+        border: 1px solid #433041;
 
         img {
             margin-left: 12px;
             transition: 0.3s;
+            filter: invert(1);
         }
 
         &:hover {
+            color: #433041;
+
             img {
-                filter: invert(1);
+                filter: invert(0);
             }
         }
     }
@@ -162,7 +175,8 @@
     textarea {
         width: 100%;
         height: 62px;
-        border: 1px solid rgba(#fff, 0.7);
+        // border: 1px solid rgba(#fff, 0.7);
+        border: 1px solid #806F7F;
         padding-left: 32px;
         border-radius: 40px;
         background: transparent;
@@ -170,14 +184,14 @@
         font-size: 16px;
         outline: none;
         transition: 0.3s;
-        color: #fff;
+        color: #433041;
 
         &:focus {
-            border: 1px solid rgba(#fff, 1);
+            border: 1px solid #433041;
         }
 
         &::placeholder {
-            color: rgba(#fff, 0.7);
+            color: #806F7F;
         }
     }
 
@@ -217,7 +231,7 @@
     justify-content: center;
     left: 0;
     top: 0;
-    background: rgba(#121212, 0.9);
+    background: rgba(#433041, 0.5);
 }
 
 .modalbox {
@@ -225,7 +239,7 @@
     width: 100%;
     border-radius: 0 20px 0 20px;
     padding: 44px 55px 62px 55px;
-    background: #E4E4E6;
+    background: #433041;
     text-align: center;
     position: relative;
 
@@ -233,14 +247,18 @@
         width: 150px;
     }
 
+    .butterfly-img {
+        margin-bottom: -30px;
+    }
+
     h2 {
         margin-bottom: 12px;
-        color: #121212;
+        color: #fff;
     }
 
     p {
         margin-bottom: 24px;
-        color: #121212;
+        color: #fff;
     }
 
     a {
@@ -249,17 +267,16 @@
         justify-content: center;
         min-width: 130px;
         height: 45px;
-        background: #121212;
-        border: 1px solid #121212;
+        background: #fff;
         transition: 0.3s;
-        color: #fff;
+        color: #433041;
         font-weight: 500;
         text-decoration: none;
         border-radius: 30px;
 
         &:hover {
-            background: #fff;
-            color: #121212;
+            background: #806F7F;
+            color: #fff;
         }
     }
 
@@ -294,6 +311,10 @@
     &.active {
         opacity: 1;
     }
+}
+
+.herosection__servprices h1 {
+    color: #fff;
 }
 
 @media(max-width:1599.8px) {
@@ -337,8 +358,7 @@
     }
 
     .contlist .title,
-    .contlist p,
-    .contlist a {
+    .contlist p {
         font-size: 18px;
     }
 
@@ -356,10 +376,6 @@
         }
     }
 
-    .contformsect {
-        padding-top: 40px;
-    }
-
     .frmbtn {
         text-align: center;
     }
@@ -369,15 +385,17 @@
         display: none;
     }
 
-    .contformsect {
-        padding-bottom: 70px;
+    .contactinfo {
+        padding: 80px 0;
+    }
+
+    .contlistwrapper {
+        max-width: 100%;
+        margin-bottom: 50px;
     }
 }
 
 @media(max-width:767.8px) {
-    .contactinfo {
-        padding-bottom: 0;
-    }
 
     .modalbox {
         max-width: 400px;
@@ -442,4 +460,27 @@
         top: 10px;
     }
 
+    .contactinfo {
+        padding: 60px 0;
+    }
+
+    .contactinfo .description {
+        margin-bottom: 40px;
+    }
+
+    .contformsect {
+        padding: 25px;
+    }
+
+    .inputfield input {
+        padding-left: 15px;
+    }
+
+    .contlistwrapper {
+        margin-bottom: 30px;
+    }
+
+    .modalbox .butterfly-img {
+        margin-bottom: -20px;
+    }
 }

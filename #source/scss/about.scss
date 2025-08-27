@@ -183,7 +183,7 @@
 }
 
 .aboutsect.aboutsect_me {
-    padding: 75px 0;
+    padding: 70px 0;
 
     .description .star1 {
         top: -50px;
@@ -215,7 +215,24 @@
     align-items: center;
 
     .transformation__bg {
-        opacity: 0.1;
+        opacity: 1;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #806F7F;
+        opacity: 0.7;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
     }
 }
 
@@ -322,7 +339,11 @@
         margin-bottom: 20px;
     }
 
-
+    .transformation.transformation_me {
+        .text-left {
+            text-align: center;
+        }
+    }
 }
 
 @media(max-width:767.8px) {
@@ -444,6 +465,6 @@
         left: initial;
     }
 
-   
+
 
 }

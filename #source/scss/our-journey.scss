@@ -145,6 +145,7 @@
         }
 
         &:hover {
+            background-color: #3C3039;
             img {
                 filter: invert(1);
             }
@@ -159,11 +160,6 @@
     width: 260px;
 }
 
-.herosection__journey {
-    h1 {
-        padding-right: 150px;
-    }
-}
 
 .herosection {
     h1.text-right {

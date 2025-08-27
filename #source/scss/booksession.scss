@@ -55,7 +55,7 @@
 
     h2 {
         margin-bottom: 19px;
-        color: #121212;
+        color: #433041;
         text-align: center;
     }
 
@@ -76,8 +76,8 @@
 
             button {
                 height: 45px;
-                background: #121212;
-                border: 1px solid #121212;
+                background: #433041;
+                border: 1px solid #433041;
                 max-width: 100%;
                 display: inline-flex;
                 align-items: center;
@@ -92,7 +92,7 @@
                 transition: 0.3s;
 
                 &:hover {
-                    color: #121212;
+                    color: #433041;
                     background: #fff;
                 }
             }
@@ -102,12 +102,12 @@
             width: 100%;
             max-width: calc(100% - 200px);
             flex: 0 0 calc(100% - 200px);
-            border-left: 1px solid #121212;
+            border-left: 1px solid #433041;
             padding-left: 18px;
 
             h4 {
                 margin-bottom: 6px;
-                color: #121212;
+                color: #433041;
                 font-size: 24px;
                 font-family: 'Miller_Banner_Bold';
                 font-weight: 700;
@@ -115,7 +115,7 @@
 
             p {
                 margin-bottom: 6px;
-                color: #121212;
+                color: #433041;
 
                 &:last-child {
                     margin-bottom: 0;

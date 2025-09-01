@@ -1,0 +1,462 @@
+.whitebg-wrapper {
+    background: #fff;
+}
+
+.indserv-quote {
+    padding: 100px 0 105px;
+    text-align: center;
+
+    img {
+        width: 57px;
+        margin-bottom: 28px;
+        vertical-align: top;
+    }
+
+    h4 {
+        margin-bottom: 24px;
+        font-size: 42px;
+        font-family: 'Miller_Banner_Regular';
+        line-height: 142%;
+        font-weight: 400;
+        color: #433041;
+        font-style: italic;
+    }
+
+    p {
+        margin: 0;
+        color: #433041;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.serviceinfo__header {
+    position: relative;
+    padding: 265px 0 0 0;
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.porpelipse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.serviceinfo__header-descr {
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: #fff;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.serviceinfo__header-img {
+    text-align: center;
+
+    img {
+        width: 100%;
+        margin-top: -115px;
+    }
+}
+
+.serviceinfo__body {
+    padding-top: 70px;
+    background: #806F7F;
+    padding-bottom: 100px;
+}
+
+.servind-faqs__body {
+    display: none;
+    padding-bottom: 28px;
+    padding-right: 110px;
+
+    p {
+        color: #CFD1D0;
+        margin: 0;
+    }
+}
+
+.servind-faqs {
+    padding-top: 134px;
+}
+
+.servind-faqs__row {
+    border-top: 1px solid rgba(#F4F7F6, 0.5);
+    border-bottom: 1px solid rgba(#F4F7F6, 0.5);
+}
+
+.servind-faqs__header {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+    position: relative;
+    padding-right: 110px;
+
+    h4 {
+        color: #fff;
+        font-size: 24px;
+        line-height: 150%;
+        font-family: 'Miller_Banner_Bold';
+    }
+
+    &.rotate {
+        .faqrow-status {
+            &::before {
+                transform: rotate(0);
+            }
+        }
+    }
+}
+
+.faqrow-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    &::after,
+    &::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 5px;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    &::after {}
+
+    &::before {
+        transform: rotate(-90deg);
+    }
+}
+
+.servind-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .labeltext {
+        margin-bottom: 28px;
+    }
+}
+
+.imgshine {
+    position: relative;
+    width: 208px;
+    z-index: 3;
+
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.shadowwhite {
+    display: inline-block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -30px;
+    bottom: 60px;
+    width: 340px;
+    height: 120px;
+    background: #fff;
+    filter: blur(80px);
+}
+
+.bookasession-section {
+    position: relative;
+    padding: 110px 0 100px;
+    text-align: center;
+
+    h2 {
+        color: #806F7F;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .white-btn {
+        border: 1px solid #433041;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .butterfly {
+        position: absolute;
+        right: 10%;
+        top: -100px;
+        width: 150px;
+        transform: rotate(20deg);
+    }
+}
+
+.herosection__service {
+    padding: 90px 0;
+}
+
+.indserv-quote h4 {
+    max-width: 884px;
+    margin: 0 auto 24px;
+}
+
+.serviceinfo__header {
+    .star1 {
+        position: absolute;
+        left: 10%;
+        top: 0;
+        animation: move 3s infinite;
+    }
+
+    .star2 {
+        position: absolute;
+        right: 47%;
+        bottom: 100px;
+        animation: move 3s infinite;
+    }
+}
+
+.servind-title {
+    position: relative;
+
+    .star1 {
+        position: absolute;
+        left: 0;
+        top: calc(100% + 20px);
+        animation: move 3s infinite;
+    }
+}
+
+.bookasession-section h2 {
+    max-width: 1010px;
+}
+
+@media(max-width:1530.8px) {
+    .serviceinfo__header-img img {
+        width: 80%;
+        margin-top: -70px;
+    }
+
+    .serviceinfo__header {
+        padding-top: 220px;
+    }
+
+    .serviceinfo__body {
+        padding-top: 50px;
+    }
+
+    .serviceinfo__header .star1 {
+        left: 12%;
+    }
+
+    .serviceinfo__header .star2 {
+        right: 45%;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .indserv-quote {
+        padding: 70px 0;
+    }
+
+    .indserv-quote h4 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .indserv-quote p {
+        font-size: 18px;
+    }
+
+    .indserv-quote img {
+        width: 40px;
+        margin-bottom: 16px;
+    }
+
+    .porpelipse {
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    .serviceinfo__header-img img {
+        margin-top: -30px;
+    }
+
+    .herosection__service {
+        padding: 60px 0;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .servind-faqs__header {
+        min-height: 72px;
+
+        h4 {
+            font-size: 21px;
+        }
+    }
+
+    .imgshine {
+        width: 160px;
+    }
+
+    .bookasession-section .butterfly {
+        width: 120px;
+    }
+
+    .serviceinfo__header {
+        padding-top: 160px;
+    }
+
+    .serviceinfo__header-descr {
+        margin-bottom: 30px;
+    }
+
+    .imgshine {
+        display: none;
+    }
+
+    .servind-faqs {
+        padding-top: 40px;
+    }
+
+    .herosection__service {
+        padding: 30px 0;
+    }
+
+    .porpelipse {
+        height: 130%;
+    }
+
+
+    .servind-title {
+        text-align: center;
+
+        .labeltext {
+            margin: 0 auto 20px;
+        }
+    }
+
+    .serviceinfo__header .star1 {
+        display: none;
+    }
+
+    .serviceinfo__header .star2 {
+        right: 48%;
+        bottom: 50px;
+    }
+
+    .servind-title .star1 {
+        left: 0;
+        top: 0;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .serviceinfo__header .star2 {
+        display: none;
+    }
+}
+
+@media(max-width:767.8px) {
+    .herosection h1.white-color br {
+        display: none;
+    }
+
+    .indserv-quote h4 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .indserv-quote p {
+        font-size: 16px;
+    }
+
+    .indserv-quote img {
+        margin-bottom: 10px;
+    }
+
+    .indserv-quote {
+        padding: 50px 0;
+    }
+
+    .serviceinfo__header {
+        padding-top: 120px;
+    }
+
+    .serviceinfo__header-img img {
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .serviceinfo__header {
+        padding-top: 80px;
+    }
+
+    .servind-faqs__header h4 {
+        font-size: 18px;
+    }
+
+    .servind-faqs__body {
+        padding-right: 30px;
+    }
+
+    .servind-faqs__header {
+        padding-right: 40px;
+    }
+
+    .serviceinfo__body {
+        padding-bottom: 60px;
+    }
+
+    .bookasession-section .butterfly {
+        width: 80px;
+        right: 0;
+        top: -60px;
+    }
+
+    .bookasession-section {
+        padding: 70px 0 50px;
+    }
+
+    .bookasession-section h2 {
+        font-size: 21px;
+    }
+
+    .indserv-quote h4 br {
+        display: none;
+    }
+}

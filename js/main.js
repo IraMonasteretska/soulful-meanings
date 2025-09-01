@@ -115,4 +115,9 @@ $(document).ready(function () {
         $(this).parent().find('ul').slideToggle();
     });
 
+    $('.servind-faqs__header').click(function(){
+        $(this).toggleClass('rotate');
+        $(this).next('.servind-faqs__body').slideToggle();
+    });
+
 })
